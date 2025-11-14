@@ -28,6 +28,12 @@
                     {{ form.non_field_errors }}
                 </div>
             {% endif %}
+            <div class="d-flex justify-content-center align-items-center">
+                <button class="btn btn-primary mb-6">Login</button>
+            </div>
+            <div class="d-flex justify-content-center align-items-center mt-2">
+                <a href="{% url 'register' %}">¿No tienes cuenta? registrate aqui!</a>
+            </div>
             <button class="btn btn-primary mb-6">Login</button>
 
         </form>
