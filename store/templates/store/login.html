@@ -20,10 +20,10 @@
             </div>
 
             {% if form.errors or form.non_field_errors %}
-                <div class="mb-4 p-6 bg-danger">
-                    {% for field in form %}
+                <div class="mb-4 p-6 bg-danger" >
+                    <h5 class = "text-white"> //tampoco se que hice
                         {{fiels.errors}}
-                    {% endfor %}
+                    </h5> //esto es x 
 
                     {{ form.non_field_errors }}
                 </div>

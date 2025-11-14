@@ -29,7 +29,9 @@
             {% if form.errors or form.non_field_errors %}
                 <div class="mb-4 p-6 bg-danger">
                     {% for field in form %}
+                    <h5 class = "text-white"> //tampoco se que hice
                         {{fiels.errors}}
+                    </h5> //esto es x 
                     {% endfor %}
 
                     {{ form.non_field_errors }}
@@ -38,6 +40,7 @@
             <button class="btn btn-primary mb-6">Register</button>
 
         </form>
+
     </div>
 </div>
 {% endblock %}
