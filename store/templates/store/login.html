@@ -1,9 +1,9 @@
 {% extends 'store/base.html' %}
 
-{% block title %}Contact | {% endblock %}
+{% block title %}Login | {% endblock %}
 
 {% block content %}
-<div class="row p-4">
+<div class="row p-4 d-flex justify-content-center align-items-center">
     <div class="col-6 bg-light p-4">
         <h4 class="mb-6 text-center">Login</h4>
         <hr>
@@ -20,10 +20,10 @@
             </div>
 
             {% if form.errors or form.non_field_errors %}
-                <div class="mb-4 p-6 bg-danger" >
-                    <h5 class = "text-white"> //tampoco se que hice
-                        {{fiels.errors}}
-                    </h5> //esto es x 
+                <div class="mb-4 p-6 bg-danger text-white rounded">
+                    {% for field in form %}
+                        {{field.errors}}
+                    {% endfor %}
 
                     {{ form.non_field_errors }}
                 </div>
@@ -34,7 +34,7 @@
             <div class="d-flex justify-content-center align-items-center mt-2">
                 <a href="{% url 'register' %}">¿No tienes cuenta? registrate aqui!</a>
             </div>
-            <button class="btn btn-primary mb-6">Login</button>
+            
 
         </form>
     </div>
