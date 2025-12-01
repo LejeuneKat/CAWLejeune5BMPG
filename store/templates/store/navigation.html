@@ -16,10 +16,16 @@
                         Contact
                     </a>
                 </li>
-            
+               
                 {% if request.user.is_authenticated %}
+                    <!-- nuevo link -->
                     <li class="nav-item">
-                        <a href="{% url 'logout' %}" class="nav-link">Logout</a>
+                        <a class="nav-link" href="{% url 'add_item'%}">Add Item</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="{% url 'logout' %}" class="nav-link active">
+                            Logout
+                        </a>
                     </li>
                 {% else %}
                     <li class="nav-item">
@@ -32,7 +38,6 @@
                             Register
                         </a>
                     </li>
-
                 {% endif %}
             </ul>
         </div>

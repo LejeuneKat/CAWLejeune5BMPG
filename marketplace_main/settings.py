@@ -25,11 +25,11 @@ SECRET_KEY = 'django-insecure-abbqs8c_^$)&q+wqo%q%wnl!be&%y19ztn1^x_znattq#nk7)@
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['wiser-halina-nonresponsively.ngrok-free.dev']
-
+ALLOWED_HOSTS = []
 LOGIN_URL = '/store/login/'
 LOGIN_REDIRECT_URL = '/'
 LOGOUT_REDIRECT_URL = '/'
+
 
 # Application definition
 
